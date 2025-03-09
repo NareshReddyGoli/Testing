@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Speed Online</title>
+    <link rel="icon" type="image/png" href="favicon2.png" />
+    <style>
+      /* Global Styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #212121;
+      }
+      .logo-container {
+        display: flex; /* Arrange items in a row */
+        align-items: center; /* Align items vertically */
+      }
+
+      .logo img {
+        width: 50px; /* Adjust logo size */
+        height: auto; /* Maintain aspect ratio */
+      }
+
+      .tileatlogo {
+        font-size: 25px; /* Adjust text size */
+        font-weight: bold;
+        margin-left: 10px; /* Add spacing between logo and title */
+      }
+
+      /* Navbar */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 5%;
+        background-color: #ffd369;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: #0061ff;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-links a,
+      .nav-links button {
+        text-decoration: none;
+        color: #333;
+        margin: 0 10px;
+        font-size: 14px;
+        padding: 8px 15px;
+        border: 1px solid #0061ff;
+        background: white;
+        cursor: pointer;
+        transition: 0.3s ease;
+        border-radius: 5px;
+      }
+      .nav-links a:hover,
+      .nav-links button:hover {
+        background-color: #f0f4ff;
+      }
+      .account-icon img {
+        width: 40px; /* Adjust size as needed */
+        height: 40px;
+        border-radius: 50%; /* Makes it circular */
+        object-fit: cover; /* Ensures the image scales properly inside the circle */
+        margin-left: 15px;
+        cursor: pointer;
+        border: 2px solid #ccc; /* Optional: Adds a border around the image */
+      }
+
+      /* Hero Section */
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 12%;
+      }
+
+      .hero-content {
+        max-width: 60%;
+      }
+
+      .hero-content h1 {
+        font-size: 36px;
+        color: #ffd369;
+      }
+
+      .hero-content p {
+        font-size: 16px;
+        color: #ffd369;
+      }
+
+      .btn-container {
+        margin-top: 25px;
+      }
+
+      .btn-primary {
+        background-color: white;
+        color: #0061ff;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+      }
+
+      .btn-primary:hover {
+        background-color: #004ecb;
+      }
+
+      .btn-secondary {
+        background-color: white;
+        color: #0061ff;
+        border: 1px solid #0061ff;
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 10px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+      }
+      .btn-secondary:hover {
+        background-color: #f0f4ff;
+      }
+
+      .note {
+        font-size: 12px;
+        color: #777;
+        margin-top: 10px;
+      }
+
+      /* Hero Image Centering */
+      .hero-image {
+        background-image: url("keyboard2.png");
+        background-size: cover; /* Ensures the image fully covers the background */
+        background-position: center; /* Centers the image */
+        background-repeat: repeat; /* Prevents repeating */
+        width: 90vw; /* Full viewport width */
+        height: 95vh; /* Full viewport height */
+        padding: 12px;
+      }
+      /* Footer */
+      .footer {
+        background-color: #ffd369;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin-top: 100px;
+        position: relative;
+      }
+
+      .footer .copyright {
+        flex: 1;
+        text-align: center;
+      }
+
+      .footer .contact-info {
+        position: absolute;
+        right: 20px;
+        bottom: 15px;
+        text-align: right;
+      }
+
+      .footer .contact-info p {
+        margin: 5px 0;
+      }
+
+      .footer a {
+        color: #00aaff;
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        text-decoration: underline;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .hero-content {
+          max-width: 100%;
+        }
+        .footer {
+          flex-direction: column;
+          text-align: center;
+        }
+        .footer .contact-info {
+          position: static;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <div class="logo"><img src="favicon2.png" /></div>
+          <div class="tileatlogo">Typing Speed Test</div>
+        </div>
+        <div class="nav-links">
+          <a href="C:\Users\nikig\OneDrive\Desktop\Speed Typing\SpeedType.html"
+            >Start Assessment</a
+          >
+          <a href="https://www.typing.com/student/lessons">Start Learning</a>
+          <a href="C:\Users\nikig\OneDrive\Desktop\Speed Typing\signin.html"
+            >Sign in</a
+          >
+          <div class="account-icon">
+            <img src="account2.jpg" alt="Account" />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to your first Typing Test!</h1>
+        <p>
+          Take a simple typing test to improve your typing skills! The timer
+          starts when you start typing.
+        </p>
+        <div class="btn-container">
+          <button class="btn-primary">Try Premium Keyboard Free</button>
+          <button class="btn-secondary">Get Assessment</button>
+        </div>
+        <p class="note">
+          Try Premium Keyboard free for 30 days. No credit card needed.
+        </p>
+      </div>
+      <div class="hero-image"></div>
+    </section>
+    <!-- Add Font Awesome for Social Media Icons -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      #footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 36px 0 24px 0;
+        width: 100%;
+        background: linear-gradient(to right, #464747, #0e0e10);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+      }
+
+      .logo-img {
+        width: 50px; /* Adjust size as needed */
+        height: auto;
+        border-radius: 8px; /* Optional: Rounded edges */
+      }
+
+      .logo-txt {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      /* Social Media Section */
+      .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .social-icons a {
+        color: white;
+        font-size: 24px;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+      }
+
+      .social-icons a:hover {
+        transform: scale(1.2);
+        color: #ffcc00;
+      }
+
+      .newsletter {
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      .newsletter input {
+        padding: 8px;
+        width: 200px;
+        border-radius: 5px;
+        border: none;
+      }
+
+      .newsletter button {
+        padding: 8px 12px;
+        background-color: #ffcc00;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+      }
+
+      .newsletter button:hover {
+        background-color: #e6b800;
+      }
+
+      .dotted {
+        width: 80%;
+        border-top: 1px dotted black;
+        margin: 10px 0;
+      }
+    </style>
+
+    <footer class="footer">
+      <footer id="footer">
+        <div class="footer-top">
+          <a
+            class="logo"
+            href="C:\Users\nikig\OneDrive\Desktop\Speed Typing\home.html"
+          >
+            <img src="favicon2.png" alt="TypingTest Logo" class="logo-img" />
+            <div class="logo-txt"><span>OnlineTypingTest.</span>com</div>
+          </a>
+          <span
+            >© 2025 Typing Test <b>Vignan University</b> - part of
+            <b>Field Project</b></span
+          >
+        </div>
+
+        <hr class="dotted" />
+
+        <span class="nav-links">
+          <a href="/privacy.php">Terms & Privacy</a>
+          <a href="/about.php">About</a>
+          <a
+            href="https://www.sporcle.com/feedback/"
+            target="_blank"
+            rel="noopener"
+            >Feedback</a
+          >
+          <a href="/blog.php">Blog</a>
+          <a
+            href="https://www.sporcle.com/math-test/"
+            target="_blank"
+            rel="noopener"
+            >Math Test</a
+          >
+        </span>
+
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" title="Facebook"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" title="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/naresh-reddy-goli-b85596298"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="newsletter">
+          <p>Subscribe to our Newsletter</p>
+          <input type="email" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </div>
+
+        <div>📚 Unleash Your Brilliance, 🏆 Embrace Education 🎓</div>
+
+        <div class="contact-info">
+          <p>
+            Email:
+            <a href="mailto:support@typingspeed.com"
+              >support@OnlineTypingTest.com</a
+            >
+          </p>
+        </div>
+      </footer>
+    </footer>
+  </body>
+</html>
